@@ -20,7 +20,7 @@ const Food = () => {
     <div>
       <h1> Food page </h1>
       {
-        food.data?.map((item) => <FoodInfoCard food={item}/>)
+        food.data?.map((item) => <FoodInfoCard data={item}/>)
       }
     </div>
   );
