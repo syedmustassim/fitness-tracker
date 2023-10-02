@@ -1,8 +1,10 @@
 import './App.css'
+import AppRouter from './AppRouter';
+
 const App = () => {
   return(
     <div>
-      <h1>Fitness tracker app</h1>
+      <AppRouter/>
     </div>
   )
 }
