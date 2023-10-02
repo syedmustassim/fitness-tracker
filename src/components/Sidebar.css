@@ -1,0 +1,15 @@
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.active-link{
+    text-decoration: none;
+    color: orange;
+}
+
+.inactive-link{
+    text-decoration: none;
+    color: black;
+}
+
