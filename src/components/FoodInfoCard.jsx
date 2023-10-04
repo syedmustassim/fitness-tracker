@@ -1,12 +1,14 @@
-const FoodInfoCard = (data) => {
-    const {food} = data;
+import "./FoodInfoCard.css"
+
+const FoodInfoCard = (food) => {
+    const {data} = food;
     return(
-        <div>
-            <h2>Name: {food.foodName}</h2>
-            <h3>Calories: {food.calories}</h3>
-            <h3>Carbohydrates: {food.carbohydrates}</h3>
-            <h3>Proteins: {food.proteins}</h3>
-            <h3>Fat: {food.fat} </h3>
+        <div className="food-card">
+            <h2>Name: {data?.foodName}</h2>
+            <h3>Calories: {data?.calories}</h3>
+            <h3>Carbohydrates: {data?.carbohydrates}</h3>
+            <h3>Proteins: {data?.proteins}</h3>
+            <h3>Fat: {data?.fat} </h3>
         </div>
     )
 }

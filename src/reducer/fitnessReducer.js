@@ -12,6 +12,23 @@ const fitnessReducer = (state = initialState, action) => {
       return { ...state, exercises: action.payload };
     case "FETCH_FOOD":
       return { ...state, food: action.payload };
+    case "ADD_EXERCISE":
+      console.log(state.exercises, "exercises in reducer  ");
+      console.log(action.payload, "payload in reducer");
+      return {
+        ...state,
+        exercises: [...state?.exercises, action.payload],
+      };
+    case "ADD_FITNESS_GOAL":
+      return {
+        ...state,
+        fitnessGoals: [...state.fitnessGoals, action.payload],
+      };
+    case "ADD_FOOD":
+      return {
+        ...state,
+        food: [...state.food, action.payload],
+      };
     default:
       return state;
   }
