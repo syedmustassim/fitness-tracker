@@ -15,7 +15,6 @@ const Exercise = () => {
     duration: 0
   })
 
-  console.log(newExercise)
 
   const handleAddExercise = (e) => {
     e.preventDefault();
@@ -59,7 +58,6 @@ const Exercise = () => {
         <button onClick={handleAddExercise}>Add exercise</button>
       </form>
       <h1> Your exercises - </h1>
-      {console.log(exercises, "Exercises page")}
       <div className="exercise-main-content">
       {
         exercises.exercises?.map((item) => <ExerciseInfoCard exercise={item} key={item?._id}/>)

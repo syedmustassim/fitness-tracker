@@ -33,13 +33,11 @@ const Food = () => {
 
   useEffect(() => {
     dispatch(fetchFood())
-  },[dispatch])
-
-  console.log(food,'lol')
+  },[dispatch,foodItem])
 
   return (
     <div>
-      <h1> Food page </h1>
+      <h1>Food page </h1>
       <h2>Add a food item: </h2>
       <form>
         <div>
@@ -65,7 +63,7 @@ const Food = () => {
         <button onClick={handleAddFood}>Add food item</button>
       </form>
       {
-        food.data?.map((item) => <FoodInfoCard data={item}/>)
+        food.data?.map((item) => <FoodInfoCard data={item} key={item._id}/>)
       }
     </div>
   );
