@@ -63,7 +63,7 @@ const Food = () => {
         <button onClick={handleAddFood}>Add food item</button>
       </form>
       {
-        food.data?.map((item) => <FoodInfoCard data={item} key={item._id}/>)
+        food?.map((item) => <FoodInfoCard data={item} key={item._id}/>)
       }
     </div>
   );

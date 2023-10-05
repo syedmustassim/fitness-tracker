@@ -58,7 +58,7 @@ const FitnessGoals = () => {
       </form>
       <h1> Your current goals </h1>
       {
-        fitnessGoals.goals?.map((item) => (<GoalInfoCard data={item} key={item._id}/>))
+        fitnessGoals?.map((item) => (<GoalInfoCard data={item} key={item._id}/>))
       }
     </div>
   );

@@ -38,6 +38,7 @@ const Exercise = () => {
     dispatch(fetchExercises())
   },[dispatch])
 
+
   return (
     <div>
       <h1> Exercise page </h1>
@@ -60,7 +61,9 @@ const Exercise = () => {
       <h1> Your exercises - </h1>
       <div className="exercise-main-content">
       {
-        exercises.exercises?.map((item) => <ExerciseInfoCard exercise={item} key={item?._id}/>)
+        exercises.length > 0 ? 
+        exercises?.map((item) => <ExerciseInfoCard exercise={item} key={item?._id}/>) : 
+        (<h1>Exercises loading</h1>)
       }
       </div>
     </div>
