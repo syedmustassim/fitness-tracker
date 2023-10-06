@@ -34,32 +34,34 @@ const FitnessGoals = () => {
       <h1> Fitness Goals </h1>
       <h2> Add new goal: </h2>
       <form className="fitness-form">
-        <div>
+        <div className="fitness-form-containers">
           <label>Goal name:</label>
           <input type="text" value={goalName} onChange={(e) => setGoalName(e.target.value)}/>
         </div>
-        <div>
+        <div className="fitness-form-containers">
           <label>Goal description:</label>
           <input type="text" value={description} onChange={(e) => setDescription(e.target.value)}/>
         </div>
-        <div>
+        <div className="fitness-form-containers">
           <label>Target Date:</label>
           <input type="date" value={targetDate} onChange={(e) => setTargetDate(e.target.value)}/>
         </div>
-        <div>
+        <div className="fitness-form-containers">
           <label>Target calories:</label>
           <input type="text" value={targetCalories} onChange={(e) => setTargetCalories(e.target.value)}/>
         </div>
-        <div>
+        <div className="fitness-form-containers">
           <label>Status:</label>
           <input type="text" value={status} onChange={(e) => setStatus(e.target.value)}/>
         </div>
         <button onClick={handleAddFitness}>Add goal</button>
       </form>
       <h1> Your current goals </h1>
+      <div className="fitness-content">
       {
         fitnessGoals?.map((item) => (<GoalInfoCard data={item} key={item._id}/>))
       }
+      </div>
     </div>
   );
 };

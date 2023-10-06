@@ -11,7 +11,7 @@ const GoalInfoCard = (goal) => {
         dispatch(deleteGoals(id))
     }
     return(
-        <div>
+        <div className="goal-card">
             <h2>Goal: {data.goalName}</h2>
             <p>Description: {data.description}</p>
             <p>Calories: {data.targetCalories}</p>

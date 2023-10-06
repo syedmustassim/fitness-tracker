@@ -43,14 +43,14 @@ const Exercise = () => {
     <div>
       <h1> Exercise page </h1>
       <h2>Enter a new exercise:</h2>
-      <form>
-        <div>
+      <form className="exercise-form">
+        <div className="exercise-form-containers">
         <label>Exercise Name: </label>
         <input type="text" value={newExercise.exerciseName} onChange={(e) => setNewExercise({
           ...newExercise, exerciseName: e.target.value
         })} />
         </div>
-        <div>
+        <div className="exercise-form-containers">
           <label>Duration: </label>
           <input type="number" value={newExercise.duration} onChange={(e) => setNewExercise({
             ...newExercise, duration: e.target.value
