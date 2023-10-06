@@ -1,0 +1,62 @@
+.home-container h1{
+    font-size: 40px;
+}
+
+.home-secondary{
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-ex{
+    background-color: rgb(235, 116, 116);
+    padding: 10px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.home-ex h3{
+    font-size: 25px;
+}
+
+.home-ex p{
+    font-size: 20px;
+}
+
+.home-fd{
+    background-color: rgb(98, 98, 201);
+    padding: 10px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.home-fd h3{
+    font-size: 25px;
+}
+
+.home-fd p{
+    font-size: 20px;
+
+}
+.home-fg{
+    background-color: rgb(98, 201, 137);
+    padding: 10px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.home-fg h3{
+    font-size: 25px;
+}
+
+.home-fg p{
+    font-size: 20px;
+}
+
+.home-metrics{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.home-metrics h2{
+    font-size: 30px;
+}

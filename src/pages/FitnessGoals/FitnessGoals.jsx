@@ -1,9 +1,9 @@
 import {useState, useEffect} from "react"
 import { useDispatch, useSelector } from "react-redux";
 import { addFitnessGoal, fetchFitnessGoals } from "../../actions/actions";
+import GoalInfoCard from "../../components/GoalInfoCard";
 
 import "./FitnessGoals.css";
-import GoalInfoCard from "../../components/GoalInfoCard";
 
 const FitnessGoals = () => {
 
@@ -30,10 +30,10 @@ const FitnessGoals = () => {
   },[dispatch, fitnessGoals])
 
   return (
-    <div>
+    <div className="fitness-container">
       <h1> Fitness Goals </h1>
       <h2> Add new goal: </h2>
-      <form>
+      <form className="fitness-form">
         <div>
           <label>Goal name:</label>
           <input type="text" value={goalName} onChange={(e) => setGoalName(e.target.value)}/>
@@ -44,7 +44,7 @@ const FitnessGoals = () => {
         </div>
         <div>
           <label>Target Date:</label>
-          <input type="text" value={targetDate} onChange={(e) => setTargetDate(e.target.value)}/>
+          <input type="date" value={targetDate} onChange={(e) => setTargetDate(e.target.value)}/>
         </div>
         <div>
           <label>Target calories:</label>
