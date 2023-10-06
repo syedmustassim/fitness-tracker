@@ -15,7 +15,7 @@ const Sidebar = () => {
             <h1><NavLink to="/food" className={isLinkActive("/food") ? "active-link" : "inactive-link"}>Food</NavLink></h1>
             <h1><NavLink to="/exercise" className={isLinkActive("/exercise") ? "active-link" : "inactive-link"}>Exercise</NavLink></h1>
             <h1><NavLink to="/fitness" className={isLinkActive("/fitness") ? "active-link" : "inactive-link"}>Fitness Goals</NavLink></h1>
-            <h1><NavLink to="https://github.com/syedmustassim/fitness-tracker" className={isLinkActive("/fitness") ? "active-link" : "inactive-link"}>Github</NavLink></h1>
+            <h1><NavLink to="https://github.com/syedmustassim/fitness-tracker" className="inactive-link">Github</NavLink></h1>
         </div>
     )
 }
